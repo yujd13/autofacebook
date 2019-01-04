@@ -2,8 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="FaceBookTestSuite" thread-count="5">
-    <parameter name="browserType" value="webdriver.opera.driver"></parameter>
-    <parameter name="driverPath" value="./src/main/resources/operadriver.exe"></parameter>
+    <parameter name="browserType" value="webdriver.chrome.driver"></parameter>
+    <parameter name="driverPath" value="./src/main/resources/chromedriver.exe"></parameter>
 
 
     <parameter name="filePath" value="Accounts.xlsx"></parameter>
