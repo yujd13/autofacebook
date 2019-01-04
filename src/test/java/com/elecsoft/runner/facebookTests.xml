@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FaceBookTestSuite" thread-count="5">
+    <parameter name="browserType" value="webdriver.opera.driver"></parameter>
+    <parameter name="driverPath" value="./src/main/resources/operadriver.exe"></parameter>
+
+
+    <parameter name="filePath" value="Accounts.xlsx"></parameter>
+    <parameter name="sheetName" value="test"></parameter>
+    <test name="com.elecsoft.facebook">
+        <classes>
+            <class name="com.elecsoft.facebook.FaceBookSignUpTest">
+                <methods>
+                    <include name="testFillAccounts"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
